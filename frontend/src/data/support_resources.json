@@ -1,0 +1,4 @@
+[
+  { "type": "hotline", "name": "National Hotline", "phone": "123-456-7890", "country": "US" },
+  { "type": "shelter", "name": "Local Safe Shelter", "phone": "555-222-1111", "country": "US" }
+]

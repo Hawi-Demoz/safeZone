@@ -1,0 +1,16 @@
+{
+  "name": "SafeZone",
+  "short_name": "SafeZone",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ef4444",
+  "description": "Gender-violence early warning and action assistant.",
+  "icons": [
+    {
+      "src": "/src/assets/logo.svg",
+      "sizes": "64x64",
+      "type": "image/svg+xml"
+    }
+  ]
+}

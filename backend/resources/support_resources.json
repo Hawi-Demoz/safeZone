@@ -1,0 +1,4 @@
+[
+  { "type": "hotline", "name": "National Hotline", "phone": "123-456-7890", "country": "US" },
+  { "type": "chat", "name": "Online Support Chat", "url": "https://example.org/chat", "country": "US" }
+]
