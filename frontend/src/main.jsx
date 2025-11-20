@@ -5,9 +5,16 @@ import './styles/base.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(<App />);
 
-// Register service worker if supported
+// Service worker: enable only in production; clear in dev to avoid cache issues
 if ('serviceWorker' in navigator) {
-	window.addEventListener('load', () => {
-		navigator.serviceWorker.register('/sw.js').catch(() => {});
-	});
+	if (import.meta.env.PROD) {
+		window.addEventListener('load', () => {
+			navigator.serviceWorker.register('/sw.js').catch(() => {});
+		});
+	} else {
+		// In dev, proactively unregister any existing SWs for this origin
+		window.addEventListener('load', () => {
+			navigator.serviceWorker.getRegistrations().then((regs) => regs.forEach((r) => r.unregister()));
+		});
+	}
 }
