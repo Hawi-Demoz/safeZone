@@ -16,7 +16,7 @@ const navs = [
 export default function BottomNav() {
   return (
     <nav
-      className="fixed bottom-0 left-0 right-0 z-40 backdrop-blur-lg bg-white/80 border-t border-gray-200 shadow-2xl"
+      className="fixed bottom-0 left-0 right-0 z-40 backdrop-blur-lg bg-white/90 border-t border-gray-100 shadow-xl"
       style={{ paddingBottom: 'max(env(safe-area-inset-bottom), 0px)' }}
       role="navigation"
       aria-label="Bottom Navigation"
@@ -27,7 +27,7 @@ export default function BottomNav() {
             key={to}
             to={to}
             className={({ isActive }) =>
-              `flex flex-col items-center justify-center px-2 py-2 transition-all duration-150 ${isActive ? 'text-red-600 font-bold scale-110' : 'text-gray-500 hover:text-red-400'} `
+              `flex flex-col items-center justify-center px-2 py-2 transition-all duration-150 ${isActive ? 'text-gray-800 font-bold scale-110' : 'text-gray-400 hover:text-gray-600'} `
             }
             style={{ minWidth: 80 }}
           >
