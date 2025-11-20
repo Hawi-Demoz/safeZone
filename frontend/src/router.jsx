@@ -4,6 +4,7 @@ import Home from './pages/Home.jsx';
 import Result from './pages/Result.jsx';
 import EmergencyHelp from './pages/EmergencyHelp.jsx';
 import Resources from './pages/Resources.jsx';
+import BottomNav from './components/BottomNav.jsx';
 
 export default function Router() {
   return (
@@ -14,6 +15,7 @@ export default function Router() {
         <Route path="/emergency" element={<EmergencyHelp />} />
         <Route path="/resources" element={<Resources />} />
       </Routes>
+      <BottomNav />
     </BrowserRouter>
   );
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import useOffline from '../hooks/useOffline';
+import useOffline from '../hooks/useOffline.js';
 
 export default function OfflineBanner() {
   const { online } = useOffline();
